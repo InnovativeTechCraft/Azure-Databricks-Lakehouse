@@ -1,14 +1,13 @@
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [project]
 name = "lakehouse"
 version = "0.1.0"
-description = "Databricks Lakehouse – Bronze/Silver/Gold"
+description = "lakehouse project"
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = ["pyyaml"]
+requires-python = ">=3.12"
+dependencies = [
+    "pyyaml"
+]
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/lakehouse"]
+[tool.setuptools]
+packages = ["lakehouse"]
+package-dir = {"" = "src"}
