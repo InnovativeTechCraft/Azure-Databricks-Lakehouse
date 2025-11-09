@@ -1,0 +1,56 @@
+env: prod
+
+storage:
+  catalog: "main"
+  schema: "raw"
+  volume: "bronze"
+  union_target: "landing_union"
+
+repo_workspace_path: "/Workspace/Repos/gerling.jean@gmail.com/Azure-Databricks-Lakehouse"
+
+datasets:
+
+  - name: "olist_customers"
+    source: "docs/datasets/olist_customers_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_geolocation"
+    source: "docs/datasets/olist_geolocation_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_order_items"
+    source: "docs/datasets/olist_order_items_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_order_payments"
+    source: "docs/datasets/olist_order_payments_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_order_reviews"
+    source: "docs/datasets/olist_order_reviews_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_orders"
+    source: "docs/datasets/olist_orders_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_products"
+    source: "docs/datasets/olist_products_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "olist_sellers"
+    source: "docs/datasets/olist_sellers_dataset.csv"
+    format: "csv"
+    options: { header: "true" }
+
+  - name: "product_category_translation"
+    source: "docs/datasets/product_category_name_translation.csv"
+    format: "csv"
+    options: { header: "true" }
